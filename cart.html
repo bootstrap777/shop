@@ -7,7 +7,8 @@
 
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
-
+    <!-- FancyBox Css -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.css" />
     <title>Car store</title>
   </head>
   <body>
@@ -69,7 +70,7 @@
   <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
     <a class="dropdown-item" href="#" data-toggle="modal" data-target="#loginModal">Login</a>
     <a class="dropdown-item" href="#" data-toggle="modal" data-target="#registerModal">Register</a>
-    <a class="dropdown-item" href="#">My Ordera</a>
+    <a class="dropdown-item" href="#">My Orders</a>
     <a class="dropdown-item" href="account.html">Account Settings</a>
   </div>
 </div>
@@ -89,7 +90,7 @@
                         </a>
                         <div class="dropdown-menu" aria-labelledby="navbarDropdown">
                         	<a class="dropdown-item" href="index.html">Home</a>
-                            <a class="dropdown-item active" href="shop.html">Shop</a>
+                            <a class="dropdown-item" href="shop.html">Shop</a>
                             <a class="dropdown-item" href="product.html">Product</a>
                           
                         </div>
@@ -156,242 +157,117 @@
      </header> 
 
     <br>
-      
-   <main class="main-container">
-
-    
-     <div class="row">
-       <div class="col-12 col-md-8">
-     	<nav aria-label="breadcrumb">
-		  <ol class="breadcrumb">
-		    <li class="breadcrumb-item"><a href="#">Bugatti</a></li>
-		    <li class="breadcrumb-item active" aria-current="page">La Voiture Noire</li>
-		  </ol>
-		</nav>
-		</div>
-		
-			<div class="d-none d-md-block col-md-4">
-		    <select class="custom-select mr-sm-2" id="inlineFormCustomSelect">
-	        <option selected>Black</option>
-	        <option value="1">Gray</option>
-	        <option value="2">White</option>
-	        </select>
-	    </div>
-      
-     </div>
-
-   <div class="row">
-       <div class="border bg-primary col-4 d-none d-md-block">
-           <div class="m-2">
-            
-             <h3>Select</h3>
-             <div class="accordion" id="accordionExample">
-                    <div class="card bg-dark">
-                      <div class="card-header" id="headingOne">
-                        <h2 class="mb-0">
-                          <button class="btn btn-link btn-block text-left" type="button" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-                            Select color
-                          </button>
-                        </h2>
-                      </div>
-                  
-                      <div id="collapseOne" class="collapse" aria-labelledby="headingOne" data-parent="#accordionExample">
-                        <div class="card-body">
-                          <select class="custom-select custom-select-sm">
-                            <option selected>Colors</option>
-                            <option value="1">Black</option>
-                            <option value="2">Gray</option>
-                            <option value="3">White</option>
-                          </select>
-                        </div>
-                      </div>
-                    </div>
-                    <div class="card bg-dark">
-                      <div class="card-header" id="headingTwo">
-                        <h2 class="mb-0">
-                          <button class="btn btn-link btn-block text-left" type="button" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="true" aria-controls="collapseTwo">
-                            Select model
-                          </button>
-                        </h2>
-                      </div>
-                  
-                      <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionExample">
-                        <div class="card-body">
-                          <select class="custom-select custom-select-sm">
-                            <option selected>Models</option>
-                            <option value="1">Veyron</option>
-                            <option value="2">Divo</option>
-                            <option value="3">Chiron</option>
-                          </select>
-                        </div>
-                      </div>
-                    </div>
-                    <div class="card bg-dark">
-                      <div class="card-header" id="headingThree">
-                        <h2 class="mb-0">
-                          <button class="btn btn-link btn-block text-left" type="button" data-toggle="collapse" data-target="#collapseThree" aria-expanded="true" aria-controls="collapseThree">
-                            Select HP
-                          </button>
-                        </h2>
-                      </div>
-                  
-                      <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordionExample">
-                        <div class="card-body">
-                          <select class="custom-select custom-select-sm">
-                            <option selected>HP's</option>
-                            <option value="1">1400</option>
-                            <option value="2">1480</option>
-                            <option value="3">1500</option>
-                          </select>
-                        </div>
-                      </div>
-                    </div>
-                    <div class="card bg-dark">
-                      <div class="card-header" id="headingFour">
-                        <h2 class="mb-0">
-                          <button class="btn btn-link btn-block text-left" type="button" data-toggle="collapse" data-target="#collapseFour" aria-expanded="true" aria-controls="collapseFour">
-                            Select Speed
-                          </button>
-                        </h2>
-                      </div>
-                  
-                      <div id="collapseFour" class="collapse" aria-labelledby="headingFour" data-parent="#accordionExample">
-                        <div class="card-body">
-                          <select class="custom-select custom-select-sm">
-                            <option selected>speeds</option>
-                            <option value="1">261mph</option>
-                            <option value="2">258mph</option>
-                            <option value="3">250mph</option>
-                          </select>
-                        </div>
-                      </div>
-                    </div>
-            
-           </div>
-           </div>
-           
-
-         </div>
 
 
 
-         <div class="border col-12 col-md-8">
-			<div class="card m-2">
-                        <div class="row">
-                            <div class="col-md-4 my-auto">
-                                <img src="https://cdn.lifestyleasia.com/wp-content/uploads/2019/09/10171123/Bugatti039s-18.7-million-La-Voiture-Noire-makes-its-US-debut.jpg"
-                                    class="card-img img-fluid" alt="...">
-                            </div>
-                            <div class=" col-md-4">
-                                <div class="card-body">
-                                  <a class="" href="product.html">La Voiture Noire</a>
-                                  <p class="card-text">BUGATTI is bringing the speed, technology, luxury and aesthetics of an icon into a new era.</p>
-                                    
-                                </div>
-                            </div>
-                            <div class="col-md-4 my-auto ">
-                                <p>$999999999</p>
-                                <a href="cart.html" class="btn btn-primary">Add To Cart</a>
-                            </div>
-                            
-                            
-                        </div>
-                    </div>
-
-                    <div class="card m-2">
-                        <div class="row">
-                            <div class="col-md-4 my-auto">
-                                <img src="https://cdn.lifestyleasia.com/wp-content/uploads/2019/09/10171123/Bugatti039s-18.7-million-La-Voiture-Noire-makes-its-US-debut.jpg"
-                                    class="card-img img-fluid" alt="...">
-                            </div>
-                            <div class=" col-md-4">
-                                <div class="card-body">
-                                  <a class="" href="product.html">La Voiture Noire</a>
-                                  <p class="card-text">BUGATTI is bringing the speed, technology, luxury and aesthetics of an icon into a new era.</p>
-                                    
-                                </div>
-                            </div>
-                            <div class="col-md-4 my-auto">
-                                <p>$999999999</p>
-                                <a href="cart.html" class="btn btn-primary">Add To Cart</a>
-                            </div>
-                            
-                            
-                        </div>
-                    </div>
-
-                    <div class="card m-2">
-                        <div class="row">
-                            <div class="col-md-4 my-auto">
-                                <img src="https://cdn.lifestyleasia.com/wp-content/uploads/2019/09/10171123/Bugatti039s-18.7-million-La-Voiture-Noire-makes-its-US-debut.jpg"
-                                    class="card-img img-fluid" alt="...">
-                            </div>
-                            <div class=" col-md-4">
-                                <div class="card-body">
-                                  <a class="" href="product.html">La Voiture Noire</a>
-                                  <p class="card-text">BUGATTI is bringing the speed, technology, luxury and aesthetics of an icon into a new era.</p>
-                                    
-                                </div>
-                            </div>
-                            <div class="col-md-4 my-auto ">
-                                <p>$999999999</p>
-                                <a href="cart.html" class="btn btn-primary">Add To Cart</a>
-                            </div>
-                            
-                            
-                        </div>
-                    </div>
-
-                    <div class="card m-2">
-                        <div class="row">
-                            <div class="col-md-4 my-auto">
-                                <img src="https://cdn.lifestyleasia.com/wp-content/uploads/2019/09/10171123/Bugatti039s-18.7-million-La-Voiture-Noire-makes-its-US-debut.jpg"
-                                    class="card-img img-fluid" alt="...">
-                            </div>
-                            <div class=" col-md-4">
-                                <div class="card-body">
-                                  <a class="" href="product.html">La Voiture Noire</a>
-                                  <p class="card-text">BUGATTI is bringing the speed, technology, luxury and aesthetics of an icon into a new era.</p>
-                                    
-                                </div>
-                            </div>
-                            <div class="col-md-4 my-auto ">
-                                <p>$999999999</p>
-                                <a href="cart.html" class="btn btn-primary">Add To Cart</a>
-                            </div>
-                            
-                            
-                        </div>
-                    </div>
-
-                    <div class="card m-2">
-                        <div class="row">
-                            <div class="col-md-4 my-auto">
-                                <img src="https://cdn.lifestyleasia.com/wp-content/uploads/2019/09/10171123/Bugatti039s-18.7-million-La-Voiture-Noire-makes-its-US-debut.jpg"
-                                    class="card-img img-fluid" alt="...">
-                            </div>
-                            <div class=" col-md-4">
-                                <div class="card-body">
-                                  <a class="" href="product.html">La Voiture Noire</a>
-                                  <p class="card-text">BUGATTI is bringing the speed, technology, luxury and aesthetics of an icon into a new era.</p>
-                                    
-                                </div>
-                            </div>
-                            <div class="col-md-4 my-auto ">
-                                <p>$999999999</p>
-                                <a href="cart.html" class="btn btn-primary">Add To Cart</a>
-                            </div>
-                            
-                            
-                        </div>
-                    </div>
-	 </div>  
-    </div>          
-   </main>
-    <br>
 
 
-    <footer>
+
+
+      <main>
+      	 <div class="row mt-4">
+            <h4  class="text-primary px-3 a">Total Orders</h4>
+            <table class="table table-striped m-0 border">
+                <thead>
+                    <tr>
+                        <th scope="col-3"> <img src="https://cdn.motor1.com/images/mgl/YnknJ/s1/bugatti-divo-liveries.jpg"
+                                style="width: 100px">
+                        </th>
+                        <th scope="col-3 text-secondary">Bugatti Divo</th>
+                        <th scope="col-3 text-secondary">$999mln</th>
+                        <th scope="col-3">
+                            <select class="custom-select custom-select-sm">
+                                <option selected>Quality</option>
+                                <option value="1">1</option>
+                                <option value="2">2</option>
+                                <option value="3">3</option>
+                            </select>
+                        </th>
+                    </tr>
+                </thead>
+                <table class="table m-0 border">
+                    <thead>
+                        <tr>
+                            <th scope="col-3">
+                                 <img
+                                    src="https://cdn.motor1.com/images/mgl/YnknJ/s1/bugatti-divo-liveries.jpg"
+                                    style="width: 100px">
+                            </th>
+                            <th scope="col-3 text-secondary">Bugatti Divo</th>
+                            <th scope="col-3 text-secondary">$999mln</th>
+                            <th scope="col-3">
+                                <select class="custom-select custom-select-sm">
+                                    <option selected>Quality</option>
+                                    <option value="1">1</option>
+                                    <option value="2">2</option>
+                                    <option value="3">3</option>
+                                </select>
+                            </th>
+                        </tr>
+                    </thead>
+                    <table class="table m-0 border">
+                        <thead>
+                            <tr>
+                                <th scope="col-3"> <img
+                                        src="https://cdn.motor1.com/images/mgl/YnknJ/s1/bugatti-divo-liveries.jpg"
+                                        style="width: 100px">
+                                </th>
+                                <th scope="col-3 text-secondary">Bugatti Divo</th>
+                                <th scope="col-3 text-secondary">$999mln</th>
+                                <th scope="col-3">
+                                    <select class="custom-select custom-select-sm">
+                                        <option selected>Quality</option>
+                                        <option value="1">1</option>
+                                        <option value="2">2</option>
+                                        <option value="3">3</option>
+                                    </select>
+                                </th>
+                            </tr>
+                        </thead>
+                        <table class="table border">
+                            <thead>
+                                <tr>
+                                    <th scope="col-3"> <img
+                                            src="https://cdn.motor1.com/images/mgl/YnknJ/s1/bugatti-divo-liveries.jpg"
+                                            style="width: 100px">
+                                    </th>
+                                    <th scope="col-3 text-secondary">Bugatti Divo</th>
+                                    <th scope="col-3 text-secondary">$999mln</th>
+                                    <th scope="col-3">
+                                        <select class="custom-select custom-select-sm">
+                                            <option selected>Quality</option>
+                                            <option value="1">1</option>
+                                            <option value="2">2</option>
+                                            <option value="3">3</option>
+                                        </select>
+                                    </th>
+                                </tr>
+                            </thead>
+                            </tbody>
+                        </table>
+                    </table>
+                </table>
+            </table>
+        </div>
+        <div class="row d-flex justify-content-end pb-3">
+            <span class="text-primary d-flex align-items-center pr-2">Total $3.9bln</span>
+            <a href="payment.html" class="btn btn-outline-primary pl-2">Checkout</a>
+        </div>
+    </div>
+      </main>
+
+
+
+
+
+
+
+
+
+      <br>
+
+
+    <footer class="container">
        <div class="row">
       <a href="#"
         class="border list-group-item list-group-item-action text-uppercase font-weight-bold text-center col-lg-3 col-sm-12">
@@ -480,9 +356,10 @@
         </a>
 
           <p class="text-light">©: Designed and Created by M. All Reserved</p>
-        
+      
 </nav>
         </div>
+
     </footer>
     
   </div>
@@ -564,5 +441,7 @@
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+    <!-- Fancybox JS -->
+    <script src="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.js"></script>
   </body>
 </html>
